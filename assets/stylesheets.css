@@ -1,0 +1,169 @@
+html,body {
+  font-family: 'Source Sans Pro', Helvetica, sans-serif !important;
+  color: #888;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin: 0 0 100px;
+}
+
+.container {
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.grid-col {
+  display: block;
+  border-left: 1px solid rgba(114, 191, 177, 0.5);
+}
+
+.last-grid-col {
+  border-right: 1px solid rgba(114, 191, 177, 0.5);
+}
+
+.grid-colour {
+  background-color: rgba(114, 191, 177, 0.2);
+  height: 100%;
+}
+
+.overlay-grid {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+}
+
+h2 {
+  font-weight: 600;
+  font-size: 26px;
+  line-height: 36px;
+  margin: 20px 20px 24px 20px;
+}
+
+.header, .left, .right, .footer, .left-offset, .right-offset {
+  border-radius: 4px;
+}
+
+.header, .footer {
+  background: rgba(191, 114, 123, 0.4);
+  border: 1px solid rgba(191, 114, 123, 0.6);
+}
+
+.vp-display {
+  margin-top: -20px;
+  margin-bottom: 20px;
+}
+
+.vp-display h2 {
+    color: rgba(186, 104, 56, 1);
+  }
+
+span {
+  display: inline-block;
+  margin: 0 5px;
+}
+
+.e {
+  color: #444;
+}
+
+.left {
+  background: rgba(147, 191, 114, 0.3);
+  border: 1px solid rgba(147, 191, 114, 0.8);
+  min-height: 100px;
+}
+
+.right {
+  background: rgba(35, 105, 175, 0.3);
+  border: 1px solid rgba(35, 105, 175, 0.8);
+  min-height: 250px;
+}
+
+.left-offset, .right-offset {
+  background: rgba(241, 196, 15, 0.3);
+  border: 1px solid rgba(241, 196, 15, 0.8);
+}
+
+/* Media queries */
+
+@media(min-width: 1200px) {
+  .e-lg {
+    color: #444;
+  }
+  .e-xs, .e-sm, .e-md {
+    color: #888;
+  }
+  
+  .v-lg {
+    display: inline-block;
+  }
+  
+  .v-xs, .v-sm, .v-md {
+    display: none;
+  }
+}
+ 
+@media(max-width: 1199px) {
+  .e-md {
+    color: #444;
+  }
+  .e-xs, .e-sm, .e-lg {
+    color: #888;
+  }
+  
+  .v-md {
+    display: inline-block;
+  }
+  
+  .v-xs, .v-sm, .v-lg {
+    display: none;
+  }
+}
+ 
+@media(max-width: 992px) {
+  .e-sm {
+    color: #444;
+  }
+  .e-xs, .e-md, .e-lg {
+    color: #888;
+  }
+  
+  .v-sm {
+    display: inline-block;
+  }
+  
+  .v-xs, .v-md, .v-lg {
+    display: none;
+  }  
+}
+
+@media(min-width: 769px) {
+  .e-sm-all {
+    color: #444;
+  }
+}
+
+@media(max-width: 768px) {
+  .e-xs {
+    color: #444;
+  }
+  .e-sm, .e-md, .e-lg {
+    color: #888;
+  }
+  
+  .left, .left-offset {
+    margin-bottom: 40px;
+  }
+  
+  .v-xs {
+    display: inline-block;
+  }
+  
+  .v-sm, .v-md, .v-lg {
+    display: none;
+  }   
+}
